@@ -5,18 +5,30 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>CookieDiscord - Serveur Minecraft</title>
 
+  <!-- Nouvelle police -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
   <style>
     body {
-      font-family: Arial, Helvetica, sans-serif;
+      font-family: 'Poppins', sans-serif;
       max-width: 900px;
       margin: 2rem auto;
       padding: 1rem;
-      line-height: 1.5;
-      color: #fff;
+      line-height: 1.6;
+      color: #f3f3f3;
       background-image: url("fond ecran.webp");
       background-size: cover;
       background-attachment: fixed;
       background-position: center;
+    }
+
+    /* Effet glassmorphism */
+    .glass {
+      background: rgba(0,0,0,0.35);
+      backdrop-filter: blur(8px);
+      border-radius: 12px;
+      padding: 1rem 1.3rem;
+      margin-bottom: 1.5rem;
     }
 
     /* Menu */
@@ -28,27 +40,31 @@
       background: rgba(0,0,0,0.45);
       padding: 0.7rem 1rem;
       border-radius: 10px;
+      backdrop-filter: blur(6px);
     }
     .menu a {
-      color: #fff;
+      color: #f8f8f8;
+      font-weight: 600;
+      letter-spacing: 0.5px;
       text-decoration: none;
-      font-weight: bold;
+      transition: 0.2s;
     }
     .menu a:hover {
-      text-decoration: underline;
+      color: #ffd27f;
+      text-shadow: 0 0 6px rgba(255,210,127,0.8);
     }
 
     /* Header */
     .top {
-      background: rgba(0,0,0,0.45);
+      text-align: center;
       padding: 1rem;
       border-radius: 10px;
       margin-bottom: 1.5rem;
-      text-align: center;
     }
 
-    h1 {
-      margin: 0;
+    h1, h2 {
+      color: #ffffff;
+      text-shadow: 0 0 10px rgba(0,0,0,0.6);
     }
 
     /* Commandes */
@@ -61,7 +77,7 @@
     }
 
     .note {
-      color: #ddd;
+      color: #e6e6e6;
       font-size: 0.95rem;
     }
 
@@ -70,6 +86,14 @@
       width: 100%;
       border-radius: 10px;
       margin-bottom: 1rem;
+    }
+
+    /* Logo */
+    .logo {
+      display: block;
+      margin: 0 auto 1rem auto;
+      width: 140px;
+      border-radius: 10px;
     }
 
     footer {
@@ -91,14 +115,17 @@
     <a href="#galerie">Galerie</a>
   </nav>
 
+  <!-- LOGO -->
+  <img src="Logo serveur MC.png" alt="Logo CookieDiscord" class="logo">
+
   <!-- HEADER -->
-  <header class="top">
+  <header class="top glass">
     <h1>CookieDiscord</h1>
     <p>Un serveur entre amis — chill & fun</p>
   </header>
 
   <!-- HISTOIRE -->
-  <section id="histoire">
+  <section id="histoire" class="glass">
     <h2>Comment tout a commencé</h2>
     <p class="note">
       Tout a commencé un soir où Alia, en train de miner tranquillement dans un monde solo,
@@ -127,7 +154,7 @@
   </section>
 
   <!-- PROJET -->
-  <section id="projet">
+  <section id="projet" class="glass">
     <h2>Le projet</h2>
     <p class="note">
       CookieDiscord est un petit serveur Minecraft entre amis.  
@@ -136,13 +163,13 @@
   </section>
 
   <!-- ADRESSE -->
-  <section id="adresse">
+  <section id="adresse" class="glass">
     <h2>Adresse</h2>
     <p class="note">ip.du.serveur:25565 (remplace par ton IP)</p>
   </section>
 
   <!-- COMMANDES -->
-  <section id="commandes">
+  <section id="commandes" class="glass">
     <h2>Commandes essentielles</h2>
     <div class="cmd">/tpa &lt;pseudo&gt; — Demande à te téléporter vers un joueur</div>
     <div class="cmd">/sethome &lt;nom&gt; — Crée un home</div>
@@ -152,7 +179,7 @@
   </section>
 
   <!-- RÈGLES -->
-  <section id="regles">
+  <section id="regles" class="glass">
     <h2>Règles rapides</h2>
     <ul>
       <li>Pas de grief / pas de vol.</li>
@@ -162,7 +189,7 @@
   </section>
 
   <!-- GALERIE -->
-  <section id="galerie">
+  <section id="galerie" class="glass">
     <h2>Galerie</h2>
     <div class="gallery">
       <img src="Autre 1.webp">
