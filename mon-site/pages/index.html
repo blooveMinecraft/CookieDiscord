@@ -1,1 +1,166 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>CookieDiscord - Accueil</title>
 
+  <!-- Police Minecraft -->
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Press Start 2P', cursive;
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 1rem;
+      color: #e0e0e0;
+      background: #2b2b2b;
+      background-image: url("images/fond ecran.webp");
+      background-size: cover;
+      background-attachment: fixed;
+      background-position: center;
+    }
+
+    /* --- MENU Minecraft --- */
+    .menu {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      background: #3c3c3c;
+      border: 4px solid #6b6b6b;
+      padding: 1rem;
+      border-radius: 4px;
+      box-shadow: 0 0 15px #000;
+      margin-bottom: 2rem;
+    }
+
+    .menu a {
+      color: #e0e0e0;
+      font-size: 0.75rem;
+      text-decoration: none;
+      padding: 0.5rem 0.7rem;
+      background: #4a4a4a;
+      border: 3px solid #6b6b6b;
+      transition: 0.15s;
+    }
+
+    .menu a:hover {
+      background: #6b6b6b;
+      transform: translateY(-3px);
+    }
+
+    /* --- Logo --- */
+    .logo {
+      display: block;
+      margin: 0 auto 1rem auto;
+      width: 140px;
+      image-rendering: pixelated;
+    }
+
+    /* --- Cadre Minecraft --- */
+    .glass {
+      background: #4a4a4a;
+      border: 4px solid #6b6b6b;
+      padding: 1.3rem;
+      border-radius: 4px;
+      box-shadow: 0 0 20px #000;
+    }
+
+    h1, h2 {
+      font-size: 1rem;
+      color: #ffd27f;
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      font-size: 0.75rem;
+      line-height: 1.4rem;
+      color: #e0e0e0;
+    }
+
+    /* --- Bouton musique --- */
+    #music-btn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      width: 55px;
+      height: 55px;
+      border: 3px solid #6b6b6b;
+      border-radius: 4px;
+      background: #3c3c3c;
+      cursor: pointer;
+      padding: 8px;
+      box-shadow: 0 0 10px #000;
+      transition: 0.2s;
+      z-index: 9999;
+    }
+
+    #music-btn:hover {
+      background: #6b6b6b;
+    }
+
+    #music-icon {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      image-rendering: pixelated;
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav class="menu">
+    <a href="projet.html">Projet</a>
+    <a href="adresse.html">Adresse</a>
+    <a href="commandes.html">Commandes</a>
+    <a href="regles.html">Règles</a>
+    <a href="galerie.html">Galerie</a>
+  </nav>
+
+  <img src="images/Logo serveur MC.png" class="logo">
+
+  <section class="glass">
+    <h1>Comment tout a commencé</h1>
+
+    <p>
+      Tout a commencé un soir où Alia, en train de miner tranquillement dans un monde solo,
+      s’est dit qu’il manquait quelque chose. Elle voulait un endroit où jouer avec ses amis,
+      un monde où chacun pourrait construire, explorer et rire sans prise de tête.
+    </p>
+
+    <p>
+      Elle en a parlé à Bloove, qui a tout de suite adoré l’idée.
+      « On pourrait faire un petit serveur juste pour nous », a-t-il dit, déjà en train
+      d’imaginer les plugins, les commandes et les premières constructions.
+    </p>
+
+    <p>
+      Alors ils se sont lancés.
+      Alia a apporté les idées, l’ambiance, l’envie de créer un endroit chill.
+      Bloove a mis les mains dans les fichiers, les configs, les tests, les réglages.
+    </p>
+
+    <p>
+      Et petit à petit, le serveur a pris forme.
+      Pas un projet pro, pas un truc énorme…
+      Juste un serveur entre amis, né d’une envie simple :
+      <strong>jouer ensemble et passer de bons moments.</strong>
+    </p>
+  </section>
+
+  <!-- --- Bouton musique + audio + script --- -->
+  <button id="music-btn">
+    <img id="music-icon" src="images/Musique activé.png" alt="Musique">
+  </button>
+
+  <audio id="bg-music" loop>
+    <source src="images/Minecraft musique.mp3" type="audio/mpeg">
+  </audio>
+
+  <script src="script/music.js"></script>
+
+</body>
+</html>
