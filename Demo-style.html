@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Démo Style Moderne</title>
+
+<style>
+body {
+  background: url('images/Adresse_du_serveur.webp') center/cover fixed;
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  margin: 0;
+  padding: 2rem;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  gap: 2.2rem;
+  background: rgba(0, 0, 0, 0.45);
+  padding: 1rem 2.2rem;
+  border-radius: 14px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+}
+
+.menu a {
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 1.25rem;
+  text-decoration: none;
+  position: relative;
+  padding: 0.3rem 0.5rem;
+  transition: 0.25s ease;
+}
+
+.menu a::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0%;
+  height: 3px;
+  background: #ffd27f;
+  border-radius: 3px;
+  transition: width 0.3s ease;
+}
+
+.menu a:hover::after {
+  width: 100%;
+}
+
+.menu a:hover {
+  color: #ffd27f;
+  transform: translateY(-3px);
+}
+</style>
+</head>
+
+<body>
+<nav class="menu">
+  <a>Accueil</a>
+  <a>Projet</a>
+  <a>Adresse</a>
+  <a>Commandes</a>
+  <a>Règles</a>
+  <a>Galerie</a>
+</nav>
+</body>
+</html>
