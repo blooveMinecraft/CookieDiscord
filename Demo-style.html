@@ -2,7 +2,7 @@
 <html lang="fr">
 <head>
 <meta charset="UTF-8">
-<title>Démo Style Pixel Art</title>
+<title>Démo Pixel Art Coloré</title>
 
 <style>
 /* --- Police pixel Minecraft --- */
@@ -10,78 +10,81 @@
 
 /* --- Fond + police --- */
 body {
-  background: #1e1e1e; /* Fond sombre Minecraft */
+  background: linear-gradient(135deg, #6ec9ff, #a8ffcf);
   font-family: 'Press Start 2P', cursive;
-  color: white;
+  color: #222;
   margin: 0;
   padding: 2rem;
 }
 
-/* --- Menu style GUI Minecraft --- */
+/* --- Menu pixel coloré --- */
 .menu {
   display: flex;
   justify-content: center;
   gap: 1rem;
-  background: #2b2b2b;
-  border: 4px solid #5f5f5f;
+  background: #ffffff;
+  border: 4px solid #8adfff;
   padding: 1rem;
   border-radius: 6px;
+  box-shadow: 0 0 10px #8adfff;
   margin-bottom: 3rem;
 }
 
 .menu a {
-  color: #fff;
+  color: #0084c7;
   font-size: 0.75rem;
   text-decoration: none;
   padding: 0.5rem 0.7rem;
-  background: #3c3c3c;
-  border: 3px solid #5f5f5f;
+  background: #dff6ff;
+  border: 3px solid #8adfff;
   transition: 0.2s;
 }
 
 .menu a:hover {
-  background: #5f5f5f;
+  background: #bdeaff;
   transform: translateY(-3px);
 }
 
-/* --- Cadre façon panneau Minecraft --- */
+/* --- Cadre pixel coloré --- */
 .container {
   max-width: 900px;
   margin: auto;
-  background: #3c3c3c;
-  border: 4px solid #5f5f5f;
+  background: #ffffff;
+  border: 4px solid #8adfff;
   padding: 2rem;
   border-radius: 6px;
-  box-shadow: 0 0 15px #000;
+  box-shadow: 0 0 15px #8adfff;
 }
 
 h1 {
   font-size: 1.2rem;
   margin-bottom: 1rem;
   text-align: center;
-  color: #ffd27f;
+  color: #00a2ff;
 }
 
 p {
   font-size: 0.75rem;
   line-height: 1.4rem;
   margin-bottom: 2rem;
+  color: #333;
 }
 
-/* --- Bouton pixel art --- */
+/* --- Bouton pixel coloré --- */
 .btn {
   display: inline-block;
-  background: #5f5f5f;
+  background: #00a2ff;
   color: white;
   padding: 0.6rem 1rem;
-  border: 3px solid #8a8a8a;
+  border: 3px solid #8adfff;
   text-decoration: none;
   font-size: 0.75rem;
   transition: 0.2s;
+  box-shadow: 0 0 10px #8adfff;
 }
 
 .btn:hover {
-  background: #7a7a7a;
+  background: #0084c7;
   transform: translateY(-3px);
 }
 </style>
@@ -101,13 +104,13 @@ p {
 
 <!-- CONTENU -->
 <div class="container">
-  <h1>Démo du Style Pixel Art</h1>
+  <h1>Style Pixel Art Coloré</h1>
   <p>
-    Voici une démonstration complète du style Minecraft Pixel Art.  
-    Interface façon GUI du jeu, police pixel, blocs gris, ambiance rétro.
+    Voici une version pixel art beaucoup plus jolie, avec des couleurs pastel inspirées de Minecraft.
+    C’est rétro, mais propre, lumineux et agréable à regarder.
   </p>
 
-  <a class="btn" href="#">Bouton Pixel</a>
+  <a class="btn" href="#">Bouton Pixel Coloré</a>
 </div>
 
 </body>
