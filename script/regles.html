@@ -63,6 +63,34 @@
     h1 {
       text-shadow: 0 0 10px rgba(0,0,0,0.6);
     }
+
+    /* --- Bouton musique --- */
+    #music-btn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      width: 55px;
+      height: 55px;
+      border: none;
+      border-radius: 50%;
+      background: rgba(0,0,0,0.55);
+      backdrop-filter: blur(6px);
+      cursor: pointer;
+      padding: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.5);
+      transition: 0.2s;
+      z-index: 9999;
+    }
+
+    #music-btn:hover {
+      background: rgba(255,255,255,0.25);
+    }
+
+    #music-icon {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
   </style>
 </head>
 
@@ -98,6 +126,17 @@
 
     <p>Rien de compliqué : juste du respect et du fun.</p>
   </section>
+
+  <!-- --- Bouton musique + audio + script --- -->
+  <button id="music-btn">
+    <img id="music-icon" src="images/Musique activé.png" alt="Musique">
+  </button>
+
+  <audio id="bg-music" loop>
+    <source src="images/Minecraft musique.mp3" type="audio/mpeg">
+  </audio>
+
+  <script src="script/music.js"></script>
 
 </body>
 </html>
