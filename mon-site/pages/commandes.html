@@ -16,13 +16,12 @@
       padding: 1rem;
       color: #e0e0e0;
       background: #2b2b2b;
-      background-image: url("images/Commande MC.png");
+      background-image: url("../../images/Commande MC.png");
       background-size: cover;
       background-attachment: fixed;
       background-position: center;
     }
 
-    /* --- MENU Minecraft --- */
     .menu {
       display: flex;
       justify-content: center;
@@ -50,7 +49,6 @@
       transform: translateY(-3px);
     }
 
-    /* --- Logo --- */
     .logo {
       display: block;
       margin: 0 auto 1rem auto;
@@ -58,7 +56,6 @@
       image-rendering: pixelated;
     }
 
-    /* --- Cadre Minecraft --- */
     .glass {
       background: #4a4a4a;
       border: 4px solid #6b6b6b;
@@ -80,7 +77,6 @@
       color: #e0e0e0;
     }
 
-    /* --- Commandes Minecraft --- */
     .cmd {
       background: #3c3c3c;
       border: 3px solid #6b6b6b;
@@ -92,7 +88,6 @@
       box-shadow: 0 0 10px #000;
     }
 
-    /* --- Bouton musique --- */
     #music-btn {
       position: fixed;
       bottom: 20px;
@@ -133,7 +128,7 @@
     <a href="galerie.html">Galerie</a>
   </nav>
 
-  <img src="images/Logo serveur MC.png" class="logo">
+  <img src="../../images/Logo serveur MC.png" class="logo">
 
   <section class="glass">
     <h1>Commandes essentielles</h1>
@@ -152,16 +147,12 @@
     <p>Ces commandes sont là pour rendre ton aventure plus simple et agréable.</p>
   </section>
 
-  <!-- --- Bouton musique + audio + script --- -->
   <button id="music-btn">
-    <img id="music-icon" src="images/Musique activé.png" alt="Musique">
+    <img id="music-icon" src="../../images/Musique activé.png" alt="Musique">
   </button>
 
   <audio id="bg-music" loop>
-    <source src="images/Minecraft musique.mp3" type="audio/mpeg">
+    <source src="../../images/Minecraft musique.mp3" type="audio/mpeg">
   </audio>
 
-  <script src="script/music.js"></script>
-
-</body>
-</html>
+  <script src="../../script/music.js">
