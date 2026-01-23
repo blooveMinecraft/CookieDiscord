@@ -1,5 +1,5 @@
 // --- CONFIGURATION --- //
-const musicFile = "../../images/music.mp3"; // chemin vers ta musique
+const musicFile = "../images/Minecraft musique.mp3"; // chemin vers ta musique
 const volumeLevel = 0.4; // volume entre 0 et 1
 
 // --- INITIALISATION --- //
@@ -14,7 +14,7 @@ document.addEventListener("click", () => {
     }
 }, { once: true });
 
-// --- BOUTON PLAY/PAUSE (optionnel si tu veux l’ajouter) --- //
+// --- BOUTON PLAY/PAUSE --- //
 function toggleMusic() {
     if (audio.paused) {
         audio.play();
