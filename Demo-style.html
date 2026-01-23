@@ -2,59 +2,40 @@
 <html lang="fr">
 <head>
 <meta charset="UTF-8">
-<title>Démo Style Moderne</title>
+<title>Démo Style Gaming</title>
 
 <style>
 /* --- Fond + police --- */
 body {
-  background: url('images/bg.webp') center/cover fixed;
+  background: #0a0f1f; /* Fond sombre gaming */
   font-family: 'Poppins', sans-serif;
   color: white;
   margin: 0;
   padding: 2rem;
 }
 
-/* --- Menu moderne --- */
+/* --- Menu néon --- */
 .menu {
   display: flex;
   justify-content: center;
-  gap: 2.2rem;
-  background: rgba(0, 0, 0, 0.45);
-  padding: 1rem 2.2rem;
-  border-radius: 14px;
-  backdrop-filter: blur(10px);
-  box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+  gap: 2rem;
+  padding: 1rem 2rem;
+  background: rgba(20,20,40,0.6);
+  border-radius: 12px;
+  box-shadow: 0 0 20px #4b00ff;
   margin-bottom: 3rem;
 }
 
 .menu a {
-  color: #ffffff;
-  font-weight: 600;
-  font-size: 1.25rem;
+  color: #b8b8ff;
+  font-size: 1.3rem;
   text-decoration: none;
-  position: relative;
-  padding: 0.3rem 0.5rem;
-  transition: 0.25s ease;
-}
-
-.menu a::after {
-  content: "";
-  position: absolute;
-  bottom: -4px;
-  left: 0;
-  width: 0%;
-  height: 3px;
-  background: #ffd27f;
-  border-radius: 3px;
-  transition: width 0.3s ease;
-}
-
-.menu a:hover::after {
-  width: 100%;
+  transition: 0.3s;
 }
 
 .menu a:hover {
-  color: #ffd27f;
+  color: #ffffff;
+  text-shadow: 0 0 10px #6f00ff;
   transform: translateY(-3px);
 }
 
@@ -62,17 +43,17 @@ body {
 .container {
   max-width: 900px;
   margin: auto;
-  background: rgba(0,0,0,0.45);
+  background: rgba(20,20,40,0.6);
   padding: 2rem;
   border-radius: 14px;
-  backdrop-filter: blur(10px);
-  box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+  box-shadow: 0 0 25px #4b00ff;
 }
 
 h1 {
   font-size: 2.5rem;
   margin-bottom: 1rem;
   text-align: center;
+  text-shadow: 0 0 10px #6f00ff;
 }
 
 p {
@@ -81,20 +62,22 @@ p {
   margin-bottom: 2rem;
 }
 
-/* --- Bouton stylé --- */
+/* --- Bouton néon --- */
 .btn {
   display: inline-block;
-  background: #ffd27f;
-  color: #000;
+  background: #6f00ff;
+  color: white;
   padding: 0.8rem 1.4rem;
   border-radius: 10px;
   font-weight: 600;
   text-decoration: none;
   transition: 0.25s;
+  box-shadow: 0 0 15px #6f00ff;
 }
 
 .btn:hover {
-  background: #ffb84d;
+  background: #8a2bff;
+  box-shadow: 0 0 25px #8a2bff;
   transform: translateY(-3px);
 }
 </style>
@@ -114,6 +97,14 @@ p {
 
 <!-- CONTENU -->
 <div class="container">
-  <h1>Démo du Style Moderne</h1>
+  <h1>Démo du Style Gaming Néon</h1>
   <p>
-    Ceci est une page de démonstration complète pour te montrer le rendu du style
+    Voici une démonstration complète du style gaming néon.  
+    Effets lumineux, ambiance serveur premium, couleurs bleu/violet.
+  </p>
+
+  <a class="btn" href="#">Bouton Néon</a>
+</div>
+
+</body>
+</html>
