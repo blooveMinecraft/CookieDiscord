@@ -2,52 +2,118 @@
 <html lang="fr">
 <head>
 <meta charset="UTF-8">
-<title>Démo Style Minecraft</title>
+<title>Démo Style Moderne</title>
 
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
-
+/* --- Fond + police --- */
 body {
-  background: url('images/Adresse_du_serveur.webp') center/cover fixed;
-  font-family: 'Press Start 2P', cursive;
+  background: url('images/bg.webp') center/cover fixed;
+  font-family: 'Poppins', sans-serif;
   color: white;
   margin: 0;
   padding: 2rem;
 }
 
+/* --- Menu moderne --- */
 .menu {
   display: flex;
   justify-content: center;
-  gap: 1.5rem;
-  background: #2b2b2b;
-  border: 4px solid #5f5f5f;
-  padding: 1rem;
-  border-radius: 6px;
+  gap: 2.2rem;
+  background: rgba(0, 0, 0, 0.45);
+  padding: 1rem 2.2rem;
+  border-radius: 14px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+  margin-bottom: 3rem;
 }
 
 .menu a {
-  color: #fff;
-  font-size: 0.8rem;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 1.25rem;
   text-decoration: none;
-  padding: 0.4rem 0.6rem;
-  background: #3c3c3c;
-  border: 3px solid #5f5f5f;
+  position: relative;
+  padding: 0.3rem 0.5rem;
+  transition: 0.25s ease;
+}
+
+.menu a::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0%;
+  height: 3px;
+  background: #ffd27f;
+  border-radius: 3px;
+  transition: width 0.3s ease;
+}
+
+.menu a:hover::after {
+  width: 100%;
 }
 
 .menu a:hover {
-  background: #5f5f5f;
+  color: #ffd27f;
+  transform: translateY(-3px);
+}
+
+/* --- Contenu principal --- */
+.container {
+  max-width: 900px;
+  margin: auto;
+  background: rgba(0,0,0,0.45);
+  padding: 2rem;
+  border-radius: 14px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+p {
+  font-size: 1.2rem;
+  line-height: 1.7rem;
+  margin-bottom: 2rem;
+}
+
+/* --- Bouton stylé --- */
+.btn {
+  display: inline-block;
+  background: #ffd27f;
+  color: #000;
+  padding: 0.8rem 1.4rem;
+  border-radius: 10px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.25s;
+}
+
+.btn:hover {
+  background: #ffb84d;
+  transform: translateY(-3px);
 }
 </style>
 </head>
 
 <body>
+
+<!-- MENU -->
 <nav class="menu">
-  <a>Accueil</a>
-  <a>Projet</a>
-  <a>Adresse</a>
-  <a>Commandes</a>
-  <a>Règles</a>
-  <a>Galerie</a>
+  <a href="#">Accueil</a>
+  <a href="#">Projet</a>
+  <a href="#">Adresse</a>
+  <a href="#">Commandes</a>
+  <a href="#">Règles</a>
+  <a href="#">Galerie</a>
 </nav>
-</body>
-</html>
+
+<!-- CONTENU -->
+<div class="container">
+  <h1>Démo du Style Moderne</h1>
+  <p>
+    Ceci est une page de démonstration complète pour te montrer le rendu du style
