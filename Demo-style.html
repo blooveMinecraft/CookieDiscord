@@ -2,82 +2,86 @@
 <html lang="fr">
 <head>
 <meta charset="UTF-8">
-<title>Démo Style Gaming</title>
+<title>Démo Style Pixel Art</title>
 
 <style>
+/* --- Police pixel Minecraft --- */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
 /* --- Fond + police --- */
 body {
-  background: #0a0f1f; /* Fond sombre gaming */
-  font-family: 'Poppins', sans-serif;
+  background: #1e1e1e; /* Fond sombre Minecraft */
+  font-family: 'Press Start 2P', cursive;
   color: white;
   margin: 0;
   padding: 2rem;
 }
 
-/* --- Menu néon --- */
+/* --- Menu style GUI Minecraft --- */
 .menu {
   display: flex;
   justify-content: center;
-  gap: 2rem;
-  padding: 1rem 2rem;
-  background: rgba(20,20,40,0.6);
-  border-radius: 12px;
-  box-shadow: 0 0 20px #4b00ff;
+  gap: 1rem;
+  background: #2b2b2b;
+  border: 4px solid #5f5f5f;
+  padding: 1rem;
+  border-radius: 6px;
   margin-bottom: 3rem;
 }
 
 .menu a {
-  color: #b8b8ff;
-  font-size: 1.3rem;
+  color: #fff;
+  font-size: 0.75rem;
   text-decoration: none;
-  transition: 0.3s;
+  padding: 0.5rem 0.7rem;
+  background: #3c3c3c;
+  border: 3px solid #5f5f5f;
+  transition: 0.2s;
 }
 
 .menu a:hover {
-  color: #ffffff;
-  text-shadow: 0 0 10px #6f00ff;
+  background: #5f5f5f;
   transform: translateY(-3px);
 }
 
-/* --- Contenu principal --- */
+/* --- Cadre façon panneau Minecraft --- */
 .container {
   max-width: 900px;
   margin: auto;
-  background: rgba(20,20,40,0.6);
+  background: #3c3c3c;
+  border: 4px solid #5f5f5f;
   padding: 2rem;
-  border-radius: 14px;
-  box-shadow: 0 0 25px #4b00ff;
+  border-radius: 6px;
+  box-shadow: 0 0 15px #000;
 }
 
 h1 {
-  font-size: 2.5rem;
+  font-size: 1.2rem;
   margin-bottom: 1rem;
   text-align: center;
-  text-shadow: 0 0 10px #6f00ff;
+  color: #ffd27f;
 }
 
 p {
-  font-size: 1.2rem;
-  line-height: 1.7rem;
+  font-size: 0.75rem;
+  line-height: 1.4rem;
   margin-bottom: 2rem;
 }
 
-/* --- Bouton néon --- */
+/* --- Bouton pixel art --- */
 .btn {
   display: inline-block;
-  background: #6f00ff;
+  background: #5f5f5f;
   color: white;
-  padding: 0.8rem 1.4rem;
-  border-radius: 10px;
-  font-weight: 600;
+  padding: 0.6rem 1rem;
+  border: 3px solid #8a8a8a;
   text-decoration: none;
-  transition: 0.25s;
-  box-shadow: 0 0 15px #6f00ff;
+  font-size: 0.75rem;
+  transition: 0.2s;
 }
 
 .btn:hover {
-  background: #8a2bff;
-  box-shadow: 0 0 25px #8a2bff;
+  background: #7a7a7a;
   transform: translateY(-3px);
 }
 </style>
@@ -97,13 +101,13 @@ p {
 
 <!-- CONTENU -->
 <div class="container">
-  <h1>Démo du Style Gaming Néon</h1>
+  <h1>Démo du Style Pixel Art</h1>
   <p>
-    Voici une démonstration complète du style gaming néon.  
-    Effets lumineux, ambiance serveur premium, couleurs bleu/violet.
+    Voici une démonstration complète du style Minecraft Pixel Art.  
+    Interface façon GUI du jeu, police pixel, blocs gris, ambiance rétro.
   </p>
 
-  <a class="btn" href="#">Bouton Néon</a>
+  <a class="btn" href="#">Bouton Pixel</a>
 </div>
 
 </body>
